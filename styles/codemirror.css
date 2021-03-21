@@ -1,0 +1,18 @@
+
+.editor {
+    background-color: #282c34;
+    height: 50%;
+    width: 50%;
+    float: left;
+  }
+  
+  .tryit {
+    float: left;
+    width: 49%;
+    height: 50%;
+    border: 2px solid black;
+  }
+  
+  .CodeMirror {
+    height: 75vh !important;
+  }

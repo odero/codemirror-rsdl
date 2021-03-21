@@ -1,0 +1,18 @@
+{
+  "name": "codemirror-6-app",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel index.html"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "parcel": "^2.0.0-beta.2"
+  },
+  "dependencies": {
+    "@codemirror/basic-setup": "^0.18.0",
+    "@codemirror/lang-javascript": "^0.18.0",
+    "@codemirror/theme-one-dark": "^0.18.0"
+  }
+}
