@@ -28,7 +28,7 @@ import spec from './swagger-spec';
 import swaggerSpec from './swagger-spec';
 SwaggerUI({
     dom_id: '#tryitview',
-    spec: spec,
+    spec: {},
 });
 
 const updateSpec = function () {
