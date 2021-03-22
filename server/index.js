@@ -9,9 +9,10 @@ app.use(cors({
 }));
 app.use(express.json());
 app.post('/', async (req, res) => {
-    const filePath = "data.rsdl"
+    const filePath = "data.rsdl";
+    const pathToRapid = "C:\\Users\\git\\odata-rapid\\tools\\rsdl\\rapid-cli\\rapid\\rapid.csproj";
     let rsdl = JSON.stringify(req.body.data.state);
-    let command = "dotnet run --project C:\\Users\\biodero\\source\\repos\\odata-rapid\\tools\\rsdl\\rapid-cli\\rapid\\rapid.csproj data.rsdl";
+    let command = `dotnet run --project ${pathToRapid} ${filePath}`;
     rsdl = rsdl.replace(/\\n/g, "\r\n").replace(/"/g, "");
     console.log("body", rsdl);
     fs.writeFile(filePath, rsdl, (err, data) => {
