@@ -1,18 +1,16 @@
 
-.editor {
-    background-color: #282c34;
-    height: 50%;
-    width: 50%;
-    float: left;
-  }
-  
-  .tryit {
-    float: left;
-    width: 49%;
-    height: 50%;
-    border: 2px solid black;
-  }
-  
-  .CodeMirror {
-    height: 75vh !important;
-  }
+.editor, .mirror-editor {
+  background-color: #282c34;
+  height: auto;
+}
+
+.try-it {
+  height: 800px;
+  overflow-y: scroll;
+}
+
+.request-builder {
+  background-color: #282c34;
+  margin-top: 10px;
+  height: 100px;
+}
