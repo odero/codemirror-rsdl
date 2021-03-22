@@ -9,5 +9,5 @@ Open `server/index.js` and update pathToRapid to something like "C:\\Users\\git\
 ```
 $ npm install
 $ npm start  // to start the frontend
-$ node server/index.js  // to start the backend
+$ npm run serve  // to start the backend
 ```
