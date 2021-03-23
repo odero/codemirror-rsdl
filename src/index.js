@@ -1,12 +1,16 @@
 import { basicSetup, EditorState, EditorView, CodeMirror } from '@codemirror/basic-setup';
 import { javascript } from '@codemirror/lang-javascript';
 import {oneDark} from "@codemirror/theme-one-dark";
-import { rsdl } from './lang-rsdl';
+import { rsdl, rsdlStyle } from './lang-rsdl';
 import axios from 'axios';
 
 const initialState = EditorState.create({
     doc: '',
-    extensions: [basicSetup, rsdl(), oneDark,
+    extensions: [
+        basicSetup,
+        rsdl(),
+        oneDark,
+        rsdlStyle,
         // EditorView.updateListener.of((v) => {
         //     if (v.docChanged) {
         //       console.log(v);
